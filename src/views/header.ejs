@@ -1,0 +1,15 @@
+<h1>ici les liens</h1>  
+
+<p> la session est 
+    <%=session %>
+</p>
+
+<% if (!session) { %>
+    <form action="/home/connectForm" method="post">
+    <input type="submit" value="Connexion">
+    </form>
+<% }else {%>
+    <form action="/home/disConnect" method="post">
+    <input type="submit" value="disConnect">
+    </form>
+<% } %>
